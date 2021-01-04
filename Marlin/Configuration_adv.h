@@ -3207,7 +3207,8 @@
  *
  * Execute certain G-code commands immediately after power-on.
  */
-//#define STARTUP_COMMANDS "M17 Z"
+// According to Waggster V1.5 https://3duk.co.uk/index.php?action=downloads;sa=view;down=20
+#define STARTUP_COMMANDS "\nM280P0S60\nG4P500\nM280P0S90\nG4P200"
 
 /**
  * G-code Macros
